@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELI5 Hub - Explain Like I'm Five</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 Explain Like I'm Five</h1>
+            <p class="subtitle">Complex topics, dead-simple explanations. No jargon, no shame.</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="topic">What do you want explained?</label>
+                <input type="text" id="topic" placeholder="e.g., How does a blockchain work?" autocomplete="off">
+                <button id="explainBtn">✨ Explain like I'm 5</button>
+            </div>
+
+            <div class="output-section" id="outputSection" style="display: none;">
+                <div class="explanation-card">
+                    <h2>📖 Simple Explanation</h2>
+                    <div id="explanationText" class="explanation-text"></div>
+                    <button id="copyBtn" class="copy-btn">📋 Copy Explanation</button>
+                </div>
+
+                <div class="examples-section">
+                    <h3>🔥 Popular explanations people loved</h3>
+                    <ul id="exampleList">
+                        <!-- populated by JS -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Thinking like a 5-year-old...</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>🤝 Submit your own ELI5? <a href="#" id="submitLink">Contribute</a> (coming soon)</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
